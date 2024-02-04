@@ -3,24 +3,42 @@
 <html>
 
 <head
-	<title>Portfolio</title>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1>Accessible Portfolio</h1>
-	<nav>
-		<a id="#">About</a>
-		<a id="#">Service</a>
-		<a id="#">Contact Us</a>
-	</nav>
-	<img src="https://www.w3schools.com/images/lamp.jpg" alt="Loading" width="500" height="600">
-	<ul>
-		<li>C++</li>
-		<li>Java</li>
-		<li>Python</li>
-	</ul>
+	<header role="heading">
+        <h1>My Accessible Portfolio</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#">Home</a></li>
+            <li role="listitem"><a href="#">About</a></li>
+            <li role="listitem"><a href="#">Portfolio</a></li>
+            <li role="listitem"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section role="main">
+        <img src="path_to_your_image.jpg" alt="A description of your portfolio image" role="img">
+        <p>A brief description of my portfolio goes here.</p>
+
+        <section role="list">
+            <h2>My Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1</li>
+                <li role="listitem">Project 2</li>
+                <li role="listitem">Project 3</li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
     <script type="text/javascript" src="./script.js">
 </script>
 
